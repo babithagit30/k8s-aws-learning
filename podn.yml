@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: podnw
+spec:
+  containers:
+  - name: nginx-arjun
+    image: nginx
+    ports:
+    - containerPort: 8080
+  - name: afakharany/watcher
+    image: docwatcher
+    ports:
+    - containerPort: 8081
+    
